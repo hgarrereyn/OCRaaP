@@ -1,6 +1,8 @@
-# OCRap
+# OCRaaP
 
-OCRap is a handwritten, two-dimensional programming language designed for maximum ease of use and portability (all you need is some paper and a pen).
+![Logo](logo.png)
+
+OCRaaP (Optical Character Recognition as a Program) is a handwritten, two-dimensional programming language designed for maximum ease of use and portability (all you need is some paper and a pen).
 
 # In the repo
 
@@ -18,7 +20,7 @@ In this repo you will find the following files and folders:
 
 # Overview
 
-An OCRap program is meant to be handwritten and scanned in to the interpreter as a square image.
+An OCRaaP program is meant to be handwritten and scanned in to the interpreter as a square image.
 
 The code pointer is a 2D projectile that moves around the code space and triggers operations upon encountering symbols. The code space is layed out on a torus to allow the code pointer to wrap around the edges.
 

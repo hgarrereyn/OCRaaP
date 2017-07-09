@@ -40,7 +40,7 @@ class Program:
         os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
         # welcome message
-        self.say('OCRap Interpreter v1.0\n')
+        self.say('OCRaaP Interpreter v1.0\n')
 
         # load the trained classifier
         self.say('* Loading classifier')
