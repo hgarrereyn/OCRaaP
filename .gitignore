@@ -1,0 +1,10 @@
+.DS_STORE
+*.pyc
+
+
+# Checkpoints
+checkpoints/*
+
+# Training data
+test/*
+train/*
