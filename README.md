@@ -4,6 +4,22 @@
 
 OCRaaP (Optical Character Recognition as a Program) is a handwritten, two-dimensional programming language designed for maximum ease of use and portability (all you need is some paper and a pen).
 
+# Quick usage
+
+You can run the example programs like so:
+
+*While in the root directory,*
+
+`python interpreter.py -i examples/helloWorld.jpg`
+
+This will run the program and print any output. If the program requires input, it will halt and wait for you to enter a string in the terminal.
+
+Alternatively, to debug a program, add the `-d` flag:
+
+`python interpreter.py -i examples/helloWorld.jpg -d`
+
+This will open up a window where you can step through the program. Simply press any key while the window is active to perform one execution step. Additionally, the current symbol, coordinate and stack values will be printed in the terminal.
+
 # In this repo
 
 In this repo you will find the following files and folders:
