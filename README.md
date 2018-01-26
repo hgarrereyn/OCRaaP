@@ -86,6 +86,8 @@ For example, the following path of symbols would push 13 (0b1101) to the stack:
 Dot -> Empty -> Dot -> Dot -> Dollar
 ```
 
+Additionally, if no const symbols (`empty` or `dot`) have been encountered since the last constant was loaded, `dollar` will simply duplicate the topmost stack element.
+
 | Symbol | Name | Description |
 | --- | --- | --- |
 | ![empty](examples/symbols/empty.jpg) | `Empty` | Writes a binary 0 |
