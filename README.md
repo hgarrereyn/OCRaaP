@@ -90,7 +90,7 @@ Dot -> Empty -> Dot -> Dot -> Dollar
 | --- | --- | --- |
 | ![empty](examples/symbols/empty.jpg) | `Empty` | Writes a binary 0 |
 | ![dot](examples/symbols/dot.jpg) | `Dot` | Writes a binary 1 |
-| ![dollar](examples/symbols/dollar.jpg) | `Dollar` | Terminates const loading |
+| ![dollar](examples/symbols/dollar.jpg) | `Dollar` | Terminates const loading and pushes result onto stack or duplicates topmost stack element |
 
 ### Arithmetic
 
