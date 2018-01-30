@@ -50,6 +50,23 @@ When the code pointer reaches `Dead`, it halts execution.
 
 Operations are conducted on an operand stack that holds unbounded integers.
 
+# Install Dependencies
+
+You'll need the following dependencies to run OCRaaP:
+ * CV2
+ * NumPy
+ * IMUtils
+ * TensorFlow
+
+## Ubuntu (and Debian distributions)
+
+You probably already have git and and pip, but don't forget about OpenCV. IMUtils and TensorFlow require escalated permissions to install.
+
+ > sudo apt-get install git python-pip python-opencv
+ > pip install --upgrade pip
+ > pip install numpy cv2
+ > sudo -H pip install imutils tensorflow
+
 # Examples
 
 The following images are examples of valid OCRaaP programs:
