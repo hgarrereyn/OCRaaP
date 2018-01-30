@@ -138,11 +138,13 @@ For example, the following path of symbols would push 13 (0b1101) to the stack:
 Dot -> Empty -> Dot -> Dot -> Dollar
 ```
 
+Additionally, if no const symbols (`empty` or `dot`) have been encountered since the last constant was loaded, `dollar` will simply duplicate the topmost stack element.
+
 | Symbol | Name | Description |
 | --- | --- | --- |
 | ![empty](examples/symbols/empty.jpg) | `Empty` | Writes a binary 0 |
 | ![dot](examples/symbols/dot.jpg) | `Dot` | Writes a binary 1 |
-| ![dollar](examples/symbols/dollar.jpg) | `Dollar` | Terminates const loading |
+| ![dollar](examples/symbols/dollar.jpg) | `Dollar` | Terminates const loading and pushes result onto stack or duplicates topmost stack element |
 
 ### Arithmetic
 
