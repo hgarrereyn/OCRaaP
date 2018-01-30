@@ -101,15 +101,13 @@ Reads a string from the console and then prints it back.
 
 The simplest version of this program would be `S@$#E`, but that would stop after one character. 
 
-We can add a loop by drawing the shape with a NOP pattern; `S0000000000$@$+$#` and point the `#` back in a loop somewhere in the `0` pad, but this would *never* stop.
+We can add a loop by drawing the shape with a NOP pattern; `S0000000000$@+$#` and point the `#` back in a loop somewhere in the `0` pad, but this would *never* stop.
 
-We can choose to stop if the character picked up with `@` is a binary zero by introducing a `?`. If we draw `S000000000$@$+$?(E)(#000000000)` with the right hand branch point at our NOP's 0 pad, we will end if the program recieves a binary zero. Our loop looks like a big circle.
+We can choose to stop if the character picked up with `@` is a binary zero by introducing a `?`. If we draw `S000000000$@+$?(E)(#000000000)` with the right hand branch point at our NOP's 0 pad, we will end if the program recieves a binary zero. Our loop looks like a big circle.
 
 > Notice that the NOP is rejoined by weaving the end pad with the start pad. On our first execution we'll have nine drawn zeroes which resolve to binary zero, and on each subsequent loop we'll have *eighteen* drawn zeroes which still resolve to binary zero.
 
 Finally, we can make our code more aesthetically interesting by twisting our circle and reusing one of our drawn zeroes. This doesn't do anything logically, but is interesting spatially.
-
-The example above has aslightly different implementation which uses the same techniques; `S00000$@$?(E)(000000$+#000)`. In this implementation, the stack gets another binary zero added with each round.
 
 # Symbols
 
